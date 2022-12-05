@@ -1,0 +1,6 @@
+-- 코드를 입력하세요
+SELECT a.FLAVOR 
+FROM FIRST_HALF AS a 
+LEFT JOIN ICECREAM_INFO AS b
+on a.FLAVOR = b.FLAVOR 
+where a.TOTAL_ORDER > 3000 and b.INGREDIENT_TYPE like 'fruit_based';
